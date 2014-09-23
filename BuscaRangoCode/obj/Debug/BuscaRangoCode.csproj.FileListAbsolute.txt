@@ -1,0 +1,19 @@
+C:\Users\SimorWork\Dropbox\VS\Projetos\VS\SENAC\BuscaRango\BuscaRangoCode\bin\Debug\BuscaRangoCode.dll.config
+C:\Users\SimorWork\Dropbox\VS\Projetos\VS\SENAC\BuscaRango\BuscaRangoCode\bin\Debug\BuscaRangoCode.dll
+C:\Users\SimorWork\Dropbox\VS\Projetos\VS\SENAC\BuscaRango\BuscaRangoCode\bin\Debug\BuscaRangoCode.pdb
+C:\Users\SimorWork\Dropbox\VS\Projetos\VS\SENAC\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.dll
+C:\Users\SimorWork\Dropbox\VS\Projetos\VS\SENAC\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SimorWork\Dropbox\VS\Projetos\VS\SENAC\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.xml
+C:\Users\SimorWork\Dropbox\VS\Projetos\VS\SENAC\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SimorWork\Dropbox\VS\Projetos\VS\SENAC\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.dll
+C:\Users\SimorWork\Dropbox\VS\Projetos\VS\SENAC\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.pdb
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\bin\Debug\BuscaRangoCode.dll.config
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\bin\Debug\BuscaRangoCode.dll
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\bin\Debug\BuscaRangoCode.pdb
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.dll
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.xml
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.csprojResolveAssemblyReference.cache
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.dll
+C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.pdb
