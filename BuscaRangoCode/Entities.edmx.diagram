@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f0b5c0f66010481283dbd1e76cce6a7b" Name="Diagram1">
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Avaliacao_Estabelecimento" Width="1.5" PointX="3" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Avaliacao_Prato" Width="1.5" PointX="7.5" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Bairro" Width="1.5" PointX="1.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Caracteristica_Estabelecimento" Width="1.5" PointX="0.75" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Caracteristica_Prato" Width="1.5" PointX="5.25" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Chamada_Garcom" Width="1.5" PointX="6" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Cidade" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Comentario_Estabelecimento" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Comentario_Prato" Width="1.5" PointX="10.5" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Curtir_Comentario_Estabelecimento" Width="1.5" PointX="8.25" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Curtir_Comentario_Prato" Width="1.5" PointX="12.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Curtir_Prato_Personalizado" Width="1.5" PointX="3" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Denuncia" Width="1.5" PointX="3" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Estabelecimento" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Estado" Width="1.5" PointX="1.5" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Formas_Pagamento" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Fotos_Estabelecimento" Width="1.5" PointX="3" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Ingrediente" Width="1.5" PointX="0.75" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Ingrediente_Personalizado" Width="1.5" PointX="6" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Lista_Estabelecimento" Width="1.5" PointX="6" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Lista_Prato" Width="1.5" PointX="3" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Log_Prato" Width="1.5" PointX="7.5" PointY="33.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Pais" Width="1.5" PointX="1.5" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Permissao_Chamada" Width="1.5" PointX="6" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Prato" Width="1.5" PointX="5.25" PointY="41.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Prato_Personalizado" Width="1.5" PointX="3" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Referencias_Estabelecimento" Width="1.5" PointX="3" PointY="46.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Tag" Width="1.5" PointX="7.5" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Tipo_Chamada" Width="1.5" PointX="3.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities_Namespace.BR_Usuario" Width="1.5" PointX="0.75" PointY="18.25" IsExpanded="true" />
+        <AssociationConnector Association="Entities_Namespace.BR_Caracteristica_Estabelecimento_BR_Avaliacao_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Estabelecimento_BR_Avaliacao_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Avaliacao_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Caracteristica_Prato_BR_Avaliacao_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Prato_BR_Avaliacao_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Avaliacao_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Bairro_BR_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Cidade_BR_Bairro_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Estabelecimento_BR_Chamada_Garcom_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Tipo_Chamada_BR_Chamada_Garcom_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Chamada_Garcom_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Estado_BR_Cidade_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Comentario_Estabelecimento_BR_Curtir_Comentario_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Estabelecimento_BR_Comentario_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Comentario_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Comentario_Prato_BR_Curtir_Comentario_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Prato_BR_Comentario_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Comentario_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Curtir_Comentario_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Curtir_Comentario_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Prato_Personalizado_BR_Curtir_Prato_Personalizado_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Curtir_Prato_Personalizado_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Denuncia_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Estabelecimento_BR_Fotos_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Estabelecimento_BR_Ingrediente_Personalizado_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Estabelecimento_BR_Permissao_Chamada_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Estabelecimento_BR_Prato_Personalizado_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Estabelecimento_BR_Referencias_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Pais_BR_Estado_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Ingrediente_BR_Ingrediente_Personalizado_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Lista_Estabelecimento_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Lista_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Prato_BR_Log_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Log_Prato_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Permissao_Chamada_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Usuario_BR_Prato_Personalizado_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Ingrediente_Prato" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_ListaEstabelecimento_Estabelecimento" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_ListaPrato_Prato" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Pagamento_Estabelecimento" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Tag_Estabelecimento" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.BR_Tag_Prato" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="EntitiesStoreContainer" CdmEntityContainer="ER_Entities">
+  <EntityContainerMapping StorageEntityContainer="Entities_NamespaceStoreContainer" CdmEntityContainer="ER_Entities">
     <EntitySetMapping Name="BR_Avaliacao_Estabelecimento">
-      <EntityTypeMapping TypeName="Entities.BR_Avaliacao_Estabelecimento">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Avaliacao_Estabelecimento">
         <MappingFragment StoreEntitySet="BR_Avaliacao_Estabelecimento">
           <ScalarProperty Name="Id_Estabelecimento" ColumnName="Id_Estabelecimento" />
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
@@ -12,7 +12,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Avaliacao_Prato">
-      <EntityTypeMapping TypeName="Entities.BR_Avaliacao_Prato">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Avaliacao_Prato">
         <MappingFragment StoreEntitySet="BR_Avaliacao_Prato">
           <ScalarProperty Name="Id_Prato" ColumnName="Id_Prato" />
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
@@ -22,7 +22,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Bairro">
-      <EntityTypeMapping TypeName="Entities.BR_Bairro">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Bairro">
         <MappingFragment StoreEntitySet="BR_Bairro">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Cidade" ColumnName="Id_Cidade" />
@@ -31,7 +31,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Caracteristica_Estabelecimento">
-      <EntityTypeMapping TypeName="Entities.BR_Caracteristica_Estabelecimento">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Caracteristica_Estabelecimento">
         <MappingFragment StoreEntitySet="BR_Caracteristica_Estabelecimento">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Caracteristica" ColumnName="Caracteristica" />
@@ -39,7 +39,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Caracteristica_Prato">
-      <EntityTypeMapping TypeName="Entities.BR_Caracteristica_Prato">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Caracteristica_Prato">
         <MappingFragment StoreEntitySet="BR_Caracteristica_Prato">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Caracteristica" ColumnName="Caracteristica" />
@@ -47,7 +47,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Chamada_Garcom">
-      <EntityTypeMapping TypeName="Entities.BR_Chamada_Garcom">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Chamada_Garcom">
         <MappingFragment StoreEntitySet="BR_Chamada_Garcom">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Tipo" ColumnName="Id_Tipo" />
@@ -58,7 +58,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Cidade">
-      <EntityTypeMapping TypeName="Entities.BR_Cidade">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Cidade">
         <MappingFragment StoreEntitySet="BR_Cidade">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Estado" ColumnName="Id_Estado" />
@@ -67,7 +67,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Comentario_Estabelecimento">
-      <EntityTypeMapping TypeName="Entities.BR_Comentario_Estabelecimento">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Comentario_Estabelecimento">
         <MappingFragment StoreEntitySet="BR_Comentario_Estabelecimento">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
@@ -77,7 +77,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Comentario_Prato">
-      <EntityTypeMapping TypeName="Entities.BR_Comentario_Prato">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Comentario_Prato">
         <MappingFragment StoreEntitySet="BR_Comentario_Prato">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
@@ -87,7 +87,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Curtir_Comentario_Estabelecimento">
-      <EntityTypeMapping TypeName="Entities.BR_Curtir_Comentario_Estabelecimento">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Curtir_Comentario_Estabelecimento">
         <MappingFragment StoreEntitySet="BR_Curtir_Comentario_Estabelecimento">
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
           <ScalarProperty Name="Id_Comentario_Estabelecimento" ColumnName="Id_Comentario_Estabelecimento" />
@@ -96,7 +96,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Curtir_Comentario_Prato">
-      <EntityTypeMapping TypeName="Entities.BR_Curtir_Comentario_Prato">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Curtir_Comentario_Prato">
         <MappingFragment StoreEntitySet="BR_Curtir_Comentario_Prato">
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
           <ScalarProperty Name="Id_Comentario_Prato" ColumnName="Id_Comentario_Prato" />
@@ -105,7 +105,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Curtir_Prato_Personalizado">
-      <EntityTypeMapping TypeName="Entities.BR_Curtir_Prato_Personalizado">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Curtir_Prato_Personalizado">
         <MappingFragment StoreEntitySet="BR_Curtir_Prato_Personalizado">
           <ScalarProperty Name="Id_Prato" ColumnName="Id_Prato" />
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
@@ -114,7 +114,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Denuncia">
-      <EntityTypeMapping TypeName="Entities.BR_Denuncia">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Denuncia">
         <MappingFragment StoreEntitySet="BR_Denuncia">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Esta_Resolvido" ColumnName="Esta_Resolvido" />
@@ -125,7 +125,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Estabelecimento">
-      <EntityTypeMapping TypeName="Entities.BR_Estabelecimento">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Estabelecimento">
         <MappingFragment StoreEntitySet="BR_Estabelecimento">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Bairro" ColumnName="Id_Bairro" />
@@ -168,7 +168,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Estado">
-      <EntityTypeMapping TypeName="Entities.BR_Estado">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Estado">
         <MappingFragment StoreEntitySet="BR_Estado">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Pais" ColumnName="Id_Pais" />
@@ -177,7 +177,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Formas_Pagamento">
-      <EntityTypeMapping TypeName="Entities.BR_Formas_Pagamento">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Formas_Pagamento">
         <MappingFragment StoreEntitySet="BR_Formas_Pagamento">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Forma" ColumnName="Forma" />
@@ -186,7 +186,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Fotos_Estabelecimento">
-      <EntityTypeMapping TypeName="Entities.BR_Fotos_Estabelecimento">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Fotos_Estabelecimento">
         <MappingFragment StoreEntitySet="BR_Fotos_Estabelecimento">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Estabelecimento" ColumnName="Id_Estabelecimento" />
@@ -195,7 +195,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Ingrediente">
-      <EntityTypeMapping TypeName="Entities.BR_Ingrediente">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Ingrediente">
         <MappingFragment StoreEntitySet="BR_Ingrediente">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Nome" ColumnName="Nome" />
@@ -203,7 +203,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Ingrediente_Personalizado">
-      <EntityTypeMapping TypeName="Entities.BR_Ingrediente_Personalizado">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Ingrediente_Personalizado">
         <MappingFragment StoreEntitySet="BR_Ingrediente_Personalizado">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Ingrediente" ColumnName="Id_Ingrediente" />
@@ -214,7 +214,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Lista_Estabelecimento">
-      <EntityTypeMapping TypeName="Entities.BR_Lista_Estabelecimento">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Lista_Estabelecimento">
         <MappingFragment StoreEntitySet="BR_Lista_Estabelecimento">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
@@ -223,7 +223,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Lista_Prato">
-      <EntityTypeMapping TypeName="Entities.BR_Lista_Prato">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Lista_Prato">
         <MappingFragment StoreEntitySet="BR_Lista_Prato">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
@@ -232,7 +232,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Log_Prato">
-      <EntityTypeMapping TypeName="Entities.BR_Log_Prato">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Log_Prato">
         <MappingFragment StoreEntitySet="BR_Log_Prato">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
@@ -242,7 +242,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Pais">
-      <EntityTypeMapping TypeName="Entities.BR_Pais">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Pais">
         <MappingFragment StoreEntitySet="BR_Pais">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Pais" ColumnName="Pais" />
@@ -250,7 +250,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Permissao_Chamada">
-      <EntityTypeMapping TypeName="Entities.BR_Permissao_Chamada">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Permissao_Chamada">
         <MappingFragment StoreEntitySet="BR_Permissao_Chamada">
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
           <ScalarProperty Name="Id_Estabelecimento" ColumnName="Id_Estabelecimento" />
@@ -260,7 +260,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Prato">
-      <EntityTypeMapping TypeName="Entities.BR_Prato">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Prato">
         <MappingFragment StoreEntitySet="BR_Prato">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Nome" ColumnName="Nome" />
@@ -274,7 +274,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Prato_Personalizado">
-      <EntityTypeMapping TypeName="Entities.BR_Prato_Personalizado">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Prato_Personalizado">
         <MappingFragment StoreEntitySet="BR_Prato_Personalizado">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
@@ -284,7 +284,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Referencias_Estabelecimento">
-      <EntityTypeMapping TypeName="Entities.BR_Referencias_Estabelecimento">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Referencias_Estabelecimento">
         <MappingFragment StoreEntitySet="BR_Referencias_Estabelecimento">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Id_Estabelecimento" ColumnName="Id_Estabelecimento" />
@@ -296,7 +296,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Tag">
-      <EntityTypeMapping TypeName="Entities.BR_Tag">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Tag">
         <MappingFragment StoreEntitySet="BR_Tag">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Tag" ColumnName="Tag" />
@@ -304,7 +304,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Tipo_Chamada">
-      <EntityTypeMapping TypeName="Entities.BR_Tipo_Chamada">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Tipo_Chamada">
         <MappingFragment StoreEntitySet="BR_Tipo_Chamada">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Tipo" ColumnName="Tipo" />
@@ -312,7 +312,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BR_Usuario">
-      <EntityTypeMapping TypeName="Entities.BR_Usuario">
+      <EntityTypeMapping TypeName="Entities_Namespace.BR_Usuario">
         <MappingFragment StoreEntitySet="BR_Usuario">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Nome" ColumnName="Nome" />
@@ -324,7 +324,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="BR_Ingrediente_Prato" TypeName="Entities.BR_Ingrediente_Prato" StoreEntitySet="BR_Ingrediente_Prato">
+    <AssociationSetMapping Name="BR_Ingrediente_Prato" TypeName="Entities_Namespace.BR_Ingrediente_Prato" StoreEntitySet="BR_Ingrediente_Prato">
       <EndProperty Name="BR_Ingrediente">
         <ScalarProperty Name="Id" ColumnName="Id_Ingrediente" />
       </EndProperty>
@@ -332,7 +332,7 @@
         <ScalarProperty Name="Id" ColumnName="Id_Prato" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="BR_ListaEstabelecimento_Estabelecimento" TypeName="Entities.BR_ListaEstabelecimento_Estabelecimento" StoreEntitySet="BR_ListaEstabelecimento_Estabelecimento">
+    <AssociationSetMapping Name="BR_ListaEstabelecimento_Estabelecimento" TypeName="Entities_Namespace.BR_ListaEstabelecimento_Estabelecimento" StoreEntitySet="BR_ListaEstabelecimento_Estabelecimento">
       <EndProperty Name="BR_Estabelecimento">
         <ScalarProperty Name="Id" ColumnName="Id_Estabelecimento" />
       </EndProperty>
@@ -340,7 +340,7 @@
         <ScalarProperty Name="Id" ColumnName="Id_Lista" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="BR_ListaPrato_Prato" TypeName="Entities.BR_ListaPrato_Prato" StoreEntitySet="BR_ListaPrato_Prato">
+    <AssociationSetMapping Name="BR_ListaPrato_Prato" TypeName="Entities_Namespace.BR_ListaPrato_Prato" StoreEntitySet="BR_ListaPrato_Prato">
       <EndProperty Name="BR_Lista_Prato">
         <ScalarProperty Name="Id" ColumnName="Id_Lista" />
       </EndProperty>
@@ -348,7 +348,7 @@
         <ScalarProperty Name="Id" ColumnName="Id_Prato" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="BR_Pagamento_Estabelecimento" TypeName="Entities.BR_Pagamento_Estabelecimento" StoreEntitySet="BR_Pagamento_Estabelecimento">
+    <AssociationSetMapping Name="BR_Pagamento_Estabelecimento" TypeName="Entities_Namespace.BR_Pagamento_Estabelecimento" StoreEntitySet="BR_Pagamento_Estabelecimento">
       <EndProperty Name="BR_Estabelecimento">
         <ScalarProperty Name="Id" ColumnName="Id_Estabelecimento" />
       </EndProperty>
@@ -356,7 +356,7 @@
         <ScalarProperty Name="Id" ColumnName="Id_Forma" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="BR_Tag_Estabelecimento" TypeName="Entities.BR_Tag_Estabelecimento" StoreEntitySet="BR_Tag_Estabelecimento">
+    <AssociationSetMapping Name="BR_Tag_Estabelecimento" TypeName="Entities_Namespace.BR_Tag_Estabelecimento" StoreEntitySet="BR_Tag_Estabelecimento">
       <EndProperty Name="BR_Estabelecimento">
         <ScalarProperty Name="Id" ColumnName="Id_Estabelecimento" />
       </EndProperty>
@@ -364,7 +364,7 @@
         <ScalarProperty Name="Id" ColumnName="Id_Tag" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="BR_Tag_Prato" TypeName="Entities.BR_Tag_Prato" StoreEntitySet="BR_Tag_Prato">
+    <AssociationSetMapping Name="BR_Tag_Prato" TypeName="Entities_Namespace.BR_Tag_Prato" StoreEntitySet="BR_Tag_Prato">
       <EndProperty Name="BR_Prato">
         <ScalarProperty Name="Id" ColumnName="Id_Prato" />
       </EndProperty>

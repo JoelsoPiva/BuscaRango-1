@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="Entities.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="Entities_Namespace.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="BR_Avaliacao_Estabelecimento">
     <Key>
       <PropertyRef Name="Id_Estabelecimento" />
@@ -925,7 +925,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="EntitiesStoreContainer">
+  <EntityContainer Name="Entities_NamespaceStoreContainer">
     <EntitySet Name="BR_Avaliacao_Estabelecimento" EntityType="Self.BR_Avaliacao_Estabelecimento" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BR_Avaliacao_Prato" EntityType="Self.BR_Avaliacao_Prato" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BR_Bairro" EntityType="Self.BR_Bairro" Schema="dbo" store:Type="Tables" />

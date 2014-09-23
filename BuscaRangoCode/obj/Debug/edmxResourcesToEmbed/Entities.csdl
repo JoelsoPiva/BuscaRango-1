@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="Entities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="Entities_Namespace" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="BR_Avaliacao_Estabelecimento">
     <Key>
       <PropertyRef Name="Id_Estabelecimento" />
@@ -275,7 +275,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" />
     <Property Name="Id_Usuario" Type="Int32" Nullable="false" />
     <Property Name="Id_Prato" Type="Int32" Nullable="false" />
-    <Property Name="Dia" Type="DateTime" Nullable="false" />
+    <Property Name="Dia" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="BR_Prato" Relationship="Self.BR_Prato_BR_Log_Prato_FK1" FromRole="BR_Log_Prato" ToRole="BR_Prato" />
     <NavigationProperty Name="BR_Usuario" Relationship="Self.BR_Usuario_BR_Log_Prato_FK1" FromRole="BR_Log_Prato" ToRole="BR_Usuario" />
   </EntityType>
@@ -294,7 +294,7 @@
     </Key>
     <Property Name="Id_Usuario" Type="Int32" Nullable="false" />
     <Property Name="Id_Estabelecimento" Type="Int32" Nullable="false" />
-    <Property Name="Dia" Type="DateTime" Nullable="false" />
+    <Property Name="Dia" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Esta_Permitido" Type="Int32" Nullable="false" />
     <NavigationProperty Name="BR_Estabelecimento" Relationship="Self.BR_Estabelecimento_BR_Permissao_Chamada_FK1" FromRole="BR_Permissao_Chamada" ToRole="BR_Estabelecimento" />
     <NavigationProperty Name="BR_Usuario" Relationship="Self.BR_Usuario_BR_Permissao_Chamada_FK1" FromRole="BR_Permissao_Chamada" ToRole="BR_Usuario" />

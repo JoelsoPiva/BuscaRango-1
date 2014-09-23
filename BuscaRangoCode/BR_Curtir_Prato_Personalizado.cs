@@ -12,16 +12,13 @@ namespace BuscaRangoCode
     using System;
     using System.Collections.Generic;
     
-    public partial class Prato
+    public partial class BR_Curtir_Prato_Personalizado
     {
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        public string Imagem { get; set; }
-        public string Descricao { get; set; }
-        public string Nota { get; set; }
-        public string Preco { get; set; }
-        public int IdEstabelecimento { get; set; }
+        public int Id_Prato { get; set; }
+        public int Id_Usuario { get; set; }
+        public bool Positivo { get; set; }
     
-        public virtual Estabelecimento Estabelecimento { get; set; }
+        public virtual BR_Prato_Personalizado BR_Prato_Personalizado { get; set; }
+        public virtual BR_Usuario BR_Usuario { get; set; }
     }
 }

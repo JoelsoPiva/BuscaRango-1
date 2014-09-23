@@ -12,21 +12,14 @@ namespace BuscaRangoCode
     using System;
     using System.Collections.Generic;
     
-    public partial class Estabelecimento
+    public partial class BR_Permissao_Chamada
     {
-        public Estabelecimento()
-        {
-            this.Pratos = new HashSet<Prato>();
-        }
+        public int Id_Usuario { get; set; }
+        public int Id_Estabelecimento { get; set; }
+        public System.DateTime Dia { get; set; }
+        public int Esta_Permitido { get; set; }
     
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        public string DescricaoCurta { get; set; }
-        public string Endereco { get; set; }
-        public string Categoria { get; set; }
-        public string Imagem { get; set; }
-        public string Nota { get; set; }
-    
-        public virtual ICollection<Prato> Pratos { get; set; }
+        public virtual BR_Estabelecimento BR_Estabelecimento { get; set; }
+        public virtual BR_Usuario BR_Usuario { get; set; }
     }
 }

@@ -17,3 +17,12 @@ C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\bin\
 C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.csprojResolveAssemblyReference.cache
 C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.dll
 C:\Users\SimorWork\Desktop\Temp\VS\BuscaRango (2)\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.pdb
+C:\Users\SimorWork\Documents\GitHub\BuscaRango\BuscaRangoCode\bin\Debug\BuscaRangoCode.dll.config
+C:\Users\SimorWork\Documents\GitHub\BuscaRango\BuscaRangoCode\bin\Debug\BuscaRangoCode.dll
+C:\Users\SimorWork\Documents\GitHub\BuscaRango\BuscaRangoCode\bin\Debug\BuscaRangoCode.pdb
+C:\Users\SimorWork\Documents\GitHub\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.dll
+C:\Users\SimorWork\Documents\GitHub\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SimorWork\Documents\GitHub\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.xml
+C:\Users\SimorWork\Documents\GitHub\BuscaRango\BuscaRangoCode\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SimorWork\Documents\GitHub\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.dll
+C:\Users\SimorWork\Documents\GitHub\BuscaRango\BuscaRangoCode\obj\Debug\BuscaRangoCode.pdb

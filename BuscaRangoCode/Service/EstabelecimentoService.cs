@@ -13,7 +13,7 @@ namespace BuscaRangoCode
         /// </summary>
         /// <param name="obj">Objeto a ser inserido</param>
         /// <returns>Objeto "Retorno" (Sucesso ou falha da operação)</returns>
-        public static Retorno Insert(Estabelecimento obj)
+        public static Retorno Insert(BR_Estabelecimento obj)
         {
             // Cria objeto de retorno
             Retorno ret = new Retorno();
@@ -24,7 +24,7 @@ namespace BuscaRangoCode
                 try
                 {
                     // Adiciona e salva
-                    ctx.Estabelecimentos.Add(obj);
+                    ctx.BR_Estabelecimento.Add(obj);
                     ctx.SaveChanges();
                 }
                 catch (Exception ex)
@@ -44,7 +44,7 @@ namespace BuscaRangoCode
         /// <param name="updateObj">Objeto com as novas propriedades</param>
         /// <param name="id">Id do objeto a ser editado</param>
         /// <returns>Objeto "Retorno" (Sucesso ou falha da operação)</returns>
-        public static Retorno Update(Estabelecimento updateObj, int id)
+        public static Retorno Update(BR_Estabelecimento updateObj, int id)
         {
             // Cria objeto de retorno
             Retorno ret = new Retorno();
@@ -55,14 +55,9 @@ namespace BuscaRangoCode
                 try
                 {
                     // Recebe o primeiro objeto da lista de Entidades
-                    Estabelecimento obj = ctx.Estabelecimentos.FirstOrDefault(x => x.Id == id);
+                    BR_Estabelecimento obj = ctx.BR_Estabelecimento.FirstOrDefault(x => x.Id == id);
                     // Edita os campos atuais
-                    obj.Nome = updateObj.Nome;
-                    obj.DescricaoCurta = updateObj.DescricaoCurta;
-                    obj.Endereco = updateObj.Endereco;
-                    obj.Imagem = updateObj.Imagem;
-                    obj.Nota = updateObj.Nota;
-                    obj.Pratos = updateObj.Pratos;
+
                     // Salva as mudanças feitas no contexto
                     ctx.SaveChanges();
                 }
@@ -91,7 +86,7 @@ namespace BuscaRangoCode
                 {
 
                     // var obj = from estab in ctx.Estabelecimentos
-                    var teste = from p in ctx.Estabelecimentos
+                    var teste = from p in ctx.BR_Estabelecimento
                                 select p;
 
 
@@ -121,7 +116,7 @@ namespace BuscaRangoCode
                 try
                 {
                     // Recupera todos objetos do grupo
-                    var obj = ctx.Estabelecimentos;
+                    var obj = ctx.BR_Estabelecimento;
                     ret.RetObj = obj.ToList();
                 }
                 catch (Exception ex)
@@ -151,7 +146,7 @@ namespace BuscaRangoCode
                 try
                 {
                     // Recebe o primeiro objeto da lista de Entidades que possui a expressão especificada
-                    var obj = ctx.Estabelecimentos.FirstOrDefault(x => x.Id == id);
+                    var obj = ctx.BR_Estabelecimento.FirstOrDefault(x => x.Id == id);
                     ret.RetObj = obj;
                 }
                 catch (Exception ex)
@@ -181,8 +176,8 @@ namespace BuscaRangoCode
                 try
                 {
                     // Recebe o primeiro objeto da lista de Entidades que possui a expressão especificada
-                    var obj = ctx.Estabelecimentos.FirstOrDefault(x => x.Id == id);
-                    ctx.Estabelecimentos.Remove(obj);
+                    var obj = ctx.BR_Estabelecimento.FirstOrDefault(x => x.Id == id);
+                    ctx.BR_Estabelecimento.Remove(obj);
                     ctx.SaveChanges();
                 }
                 catch (Exception ex)
