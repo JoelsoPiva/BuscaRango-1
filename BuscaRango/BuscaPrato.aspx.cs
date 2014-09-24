@@ -10,8 +10,8 @@ namespace BuscaRango
 {
     public partial class BuscaPrato : System.Web.UI.Page
     {
-        public List<Prato> LstPratos;
-        public List<Prato> LstPratosFiltrados;
+        public List<BR_Prato> LstPratos;
+        public List<BR_Prato> LstPratosFiltrados;
 
         /// <summary>
         /// Page Load
@@ -27,10 +27,10 @@ namespace BuscaRango
 
                 var pratos = PratoService.SelectAll();
 
-                LstPratosFiltrados = new List<Prato>();
+                LstPratosFiltrados = new List<BR_Prato>();
                 if (pratos.Sucesso)
                 {
-                    LstPratos = (List<Prato>)pratos.RetObj;
+                    LstPratos = (List<BR_Prato>)pratos.RetObj;
                     LstPratos.ForEach(x => LstPratosFiltrados.Add(x));
                     CarregaPratosFiltrados();
                     Session["Data"] = LstPratos;
@@ -71,18 +71,20 @@ namespace BuscaRango
         {
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
-                Prato prato = (Prato)e.Item.DataItem;
+                BR_Prato prato = (BR_Prato)e.Item.DataItem;
                 Label nome = (Label)e.Item.FindControl("lblNome");
                 Label descricao = (Label)e.Item.FindControl("lblDescricao");
                 Label estabelecimento = (Label)e.Item.FindControl("lblEstabelecimento");
                 Label nota = (Label)e.Item.FindControl("lblNota");
                 Image img = (Image)e.Item.FindControl("img");
 
+                /*
                 nome.Text = prato.Nome;
                 descricao.Text = prato.Descricao;
                 estabelecimento.Text = prato.Estabelecimento.Nome;
                 nota.Text = "Nota: " + prato.Nota;
                 img.ImageUrl = "~/Img/Prato/" + prato.Imagem;
+                */
             }
         }
     }

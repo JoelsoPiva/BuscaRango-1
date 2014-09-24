@@ -10,8 +10,8 @@ namespace BuscaRango
 {
     public partial class BuscaEstabelecimento : System.Web.UI.Page
     {
-        List<Estabelecimento> lstEstabelecimentos;
-        List<Estabelecimento> lstEstabelecimentosFiltrados;
+        List<BR_Estabelecimento> lstEstabelecimentos;
+        List<BR_Estabelecimento> lstEstabelecimentosFiltrados;
 
         /// <summary>
         /// Page Load
@@ -26,10 +26,10 @@ namespace BuscaRango
                 MudaCorBotao("btnLugar");
 
                 var estabelecimantos = EstabelecimentoService.SelectIn();
-                lstEstabelecimentosFiltrados = new List<Estabelecimento>();
+                lstEstabelecimentosFiltrados = new List<BR_Estabelecimento>();
                 if (estabelecimantos.Sucesso)
                 {
-                    lstEstabelecimentos = (List<Estabelecimento>)estabelecimantos.RetObj;
+                    lstEstabelecimentos = (List<BR_Estabelecimento>)estabelecimantos.RetObj;
                     lstEstabelecimentos.ForEach(x => lstEstabelecimentosFiltrados.Add(x));
                     CarregaEstabelecimentos();
                     Session["Data"] = lstEstabelecimentos;
@@ -61,7 +61,7 @@ namespace BuscaRango
         {
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
-                Estabelecimento estab = (Estabelecimento)e.Item.DataItem;
+                BR_Estabelecimento estab = (BR_Estabelecimento)e.Item.DataItem;
                 Label nome = (Label)e.Item.FindControl("lblNome");
                 Label descricao = (Label)e.Item.FindControl("lblDescricao");
                 Label categoria = (Label)e.Item.FindControl("lblCategoria");
@@ -69,11 +69,13 @@ namespace BuscaRango
                 Label nota = (Label)e.Item.FindControl("lblNota");
                 Image img = (Image)e.Item.FindControl("img");
 
+                /*
                 nome.Text = estab.Nome;
                 descricao.Text = estab.DescricaoCurta;
                 categoria.Text = estab.Categoria;
                 nota.Text = "Nota: " + estab.Nota;
                 img.ImageUrl = "~/Img/Estabelecimento/" + estab.Imagem;
+                */
             }
         }
 
