@@ -17,6 +17,8 @@ namespace BuscaRango
             RouteTable.Routes.MapPageRoute("RotaHome", "Home", "~/Default.aspx");
             RouteTable.Routes.MapPageRoute("RotaBuscaEstabelecimento", "Lugar", "~/BuscaEstabelecimento.aspx");
             RouteTable.Routes.MapPageRoute("RotaBuscaPrato", "Prato", "~/BuscaPrato.aspx");
+            RouteTable.Routes.MapPageRoute("RotaVerPrato", "VerPrato/{IdPrato}/", "~/VerPrato.aspx");
+            RouteTable.Routes.MapPageRoute("RotaVerEstabelecimento", "VerEstabelecimento/{IdEstabelecimento}/", "~/VerEstabelecimento.aspx");
             RouteTable.Routes.MapPageRoute("RotaConfiguracao", "Configuracao", "~/Configuracao.aspx");
         }
 
