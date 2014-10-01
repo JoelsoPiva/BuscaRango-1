@@ -13,6 +13,15 @@ namespace BuscaRango {
     public partial class BuscaPrato {
         
         /// <summary>
+        /// upContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel upContent;
+        
+        /// <summary>
         /// txtBusca control.
         /// </summary>
         /// <remarks>

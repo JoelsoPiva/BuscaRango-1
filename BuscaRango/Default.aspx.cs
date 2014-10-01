@@ -41,7 +41,7 @@ namespace BuscaRango
         /// <param name="e"></param>
         protected void lnkPratos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/BuscaPrato");
+            Response.Redirect("~/Prato");
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace BuscaRango
         /// <param name="e"></param>
         protected void lnkEstabelecimentos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/BuscaEstabelecimento");
+            Response.Redirect("~/Lugar");
         }
     }
 }

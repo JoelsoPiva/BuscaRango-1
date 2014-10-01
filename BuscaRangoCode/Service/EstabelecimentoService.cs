@@ -86,7 +86,7 @@ namespace BuscaRangoCode
                 {
 
                     // var obj = from estab in ctx.Estabelecimentos
-                    var teste = from p in ctx.BR_Estabelecimento
+                    var teste = from p in ctx.BR_Estabelecimento.Include("BR_Fotos_Estabelecimento")
                                 select p;
 
 
@@ -146,7 +146,7 @@ namespace BuscaRangoCode
                 try
                 {
                     // Recebe o primeiro objeto da lista de Entidades que possui a expressão especificada
-                    var obj = ctx.BR_Estabelecimento.FirstOrDefault(x => x.Id == id);
+                    var obj = ctx.BR_Estabelecimento.Include("BR_Prato").FirstOrDefault(x => x.Id == id);
                     ret.RetObj = obj;
                 }
                 catch (Exception ex)

@@ -77,6 +77,7 @@
         <AssociationConnector Association="Entities_Namespace.BR_Pagamento_Estabelecimento" ManuallyRouted="false" />
         <AssociationConnector Association="Entities_Namespace.BR_Tag_Estabelecimento" ManuallyRouted="false" />
         <AssociationConnector Association="Entities_Namespace.BR_Tag_Prato" ManuallyRouted="false" />
+        <AssociationConnector Association="Entities_Namespace.FK_BR_Prato_BR_Estabelecimento" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

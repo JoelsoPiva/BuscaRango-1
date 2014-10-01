@@ -87,7 +87,7 @@ namespace BuscaRangoCode
                 try
                 {
                     // Recupera todos objetos do grupo
-                    var obj = ctx.BR_Prato;
+                    var obj = ctx.BR_Prato.Include("BR_Estabelecimento");
                     ret.RetObj = obj.ToList();
                 }
                 catch (Exception ex)
@@ -117,7 +117,7 @@ namespace BuscaRangoCode
                 try
                 {
                     // Recebe o primeiro objeto da lista de Entidades que possui a expressão especificada
-                    var obj = ctx.BR_Prato.FirstOrDefault(x => x.Id == id);
+                    var obj = ctx.BR_Prato.Include("BR_Estabelecimento").FirstOrDefault(x => x.Id == id);
                     ret.RetObj = obj;
                 }
                 catch (Exception ex)

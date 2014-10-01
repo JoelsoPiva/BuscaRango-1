@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Entities_Namespace.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Entities_Namespace.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BR_Avaliacao_Estabelecimento">
           <Key>
             <PropertyRef Name="Id_Estabelecimento" />
@@ -31,7 +31,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Cidade" Type="int" Nullable="false" />
           <Property Name="Bairro" Type="varchar" MaxLength="200" Nullable="false" />
         </EntityType>
@@ -39,21 +39,21 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Caracteristica" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="BR_Caracteristica_Prato">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Caracteristica" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="BR_Chamada_Garcom">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Tipo" Type="int" Nullable="false" />
           <Property Name="Id_Usuario" Type="int" Nullable="false" />
           <Property Name="Id_Estabelecimento" Type="int" Nullable="false" />
@@ -63,7 +63,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Estado" Type="int" Nullable="false" />
           <Property Name="Cidade" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -71,7 +71,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Usuario" Type="int" Nullable="false" />
           <Property Name="Id_Estabelecimento" Type="int" Nullable="false" />
           <Property Name="Comentario" Type="varchar" MaxLength="300" Nullable="false" />
@@ -80,7 +80,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Usuario" Type="int" Nullable="false" />
           <Property Name="Id_Prato" Type="int" Nullable="false" />
           <Property Name="Comentario" Type="varchar" MaxLength="300" Nullable="false" />
@@ -116,7 +116,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Esta_Resolvido" Type="bit" Nullable="false" />
           <Property Name="Entidade" Type="varchar" MaxLength="200" Nullable="false" />
           <Property Name="Id_Entidade" Type="int" Nullable="false" />
@@ -126,7 +126,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Bairro" Type="int" Nullable="false" />
           <Property Name="Razao_Social" Type="varchar" MaxLength="200" Nullable="false" />
           <Property Name="Tel_Responsavel" Type="varchar" MaxLength="100" Nullable="false" />
@@ -168,7 +168,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Pais" Type="int" Nullable="false" />
           <Property Name="Estado" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -176,7 +176,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Forma" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="Imagem" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -184,7 +184,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Estabelecimento" Type="int" Nullable="false" />
           <Property Name="Imagem" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -192,14 +192,14 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Nome" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="BR_Ingrediente_Personalizado">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Ingrediente" Type="int" Nullable="false" />
           <Property Name="Id_Estabelecimento" Type="int" Nullable="false" />
           <Property Name="Grupo" Type="int" Nullable="false" />
@@ -217,7 +217,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Usuario" Type="int" Nullable="false" />
           <Property Name="Nome_Lista" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -225,7 +225,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Usuario" Type="int" Nullable="false" />
           <Property Name="Nome_Lista" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -249,7 +249,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Usuario" Type="int" Nullable="false" />
           <Property Name="Id_Prato" Type="int" Nullable="false" />
           <Property Name="Dia" Type="datetime" Nullable="false" />
@@ -266,7 +266,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Pais" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="BR_Permissao_Chamada">
@@ -283,7 +283,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Nome" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="Descricao" Type="varchar" MaxLength="2000" Nullable="false" />
           <Property Name="Descricao_Curta" Type="varchar" MaxLength="100" Nullable="false" />
@@ -291,12 +291,13 @@
           <Property Name="Tem_Entrega" Type="bit" Nullable="false" />
           <Property Name="Ativo" Type="bit" Nullable="false" />
           <Property Name="Imagem" Type="varchar" MaxLength="200" />
+          <Property Name="Id_Estabelecimento" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="BR_Prato_Personalizado">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Usuario" Type="int" Nullable="false" />
           <Property Name="Id_Estabelecimento" Type="int" Nullable="false" />
           <Property Name="Nome" Type="varchar" MaxLength="100" Nullable="false" />
@@ -305,7 +306,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Id_Estabelecimento" Type="int" Nullable="false" />
           <Property Name="Titulo" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="SubTitulo" Type="varchar" MaxLength="100" />
@@ -316,7 +317,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Tag" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="BR_Tag_Estabelecimento">
@@ -339,14 +340,14 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Tipo" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="BR_Usuario">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Nome" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="Senha" Type="varchar" MaxLength="100" />
@@ -930,6 +931,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_BR_Prato_BR_Estabelecimento">
+          <End Role="BR_Estabelecimento" Type="Self.BR_Estabelecimento" Multiplicity="1" />
+          <End Role="BR_Prato" Type="Self.BR_Prato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BR_Estabelecimento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BR_Prato">
+              <PropertyRef Name="Id_Estabelecimento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="Entities_NamespaceStoreContainer">
           <EntitySet Name="BR_Avaliacao_Estabelecimento" EntityType="Self.BR_Avaliacao_Estabelecimento" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="BR_Avaliacao_Prato" EntityType="Self.BR_Avaliacao_Prato" Schema="dbo" store:Type="Tables" />
@@ -1159,9 +1172,12 @@
             <End Role="BR_Usuario" EntitySet="BR_Usuario" />
             <End Role="BR_Prato_Personalizado" EntitySet="BR_Prato_Personalizado" />
           </AssociationSet>
+          <AssociationSet Name="FK_BR_Prato_BR_Estabelecimento" Association="Self.FK_BR_Prato_BR_Estabelecimento">
+            <End Role="BR_Estabelecimento" EntitySet="BR_Estabelecimento" />
+            <End Role="BR_Prato" EntitySet="BR_Prato" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Entities_Namespace" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1363,6 +1379,7 @@
           <NavigationProperty Name="BR_Lista_Estabelecimento" Relationship="Self.BR_ListaEstabelecimento_Estabelecimento" FromRole="BR_Estabelecimento" ToRole="BR_Lista_Estabelecimento" />
           <NavigationProperty Name="BR_Formas_Pagamento" Relationship="Self.BR_Pagamento_Estabelecimento" FromRole="BR_Estabelecimento" ToRole="BR_Formas_Pagamento" />
           <NavigationProperty Name="BR_Tag" Relationship="Self.BR_Tag_Estabelecimento" FromRole="BR_Estabelecimento" ToRole="BR_Tag" />
+          <NavigationProperty Name="BR_Prato" Relationship="Entities_Namespace.FK_BR_Prato_BR_Estabelecimento" FromRole="BR_Estabelecimento" ToRole="BR_Prato" />
         </EntityType>
         <EntityType Name="BR_Estado">
           <Key>
@@ -1481,6 +1498,8 @@
           <NavigationProperty Name="BR_Log_Prato" Relationship="Self.BR_Prato_BR_Log_Prato_FK1" FromRole="BR_Prato" ToRole="BR_Log_Prato" />
           <NavigationProperty Name="BR_Lista_Prato" Relationship="Self.BR_ListaPrato_Prato" FromRole="BR_Prato" ToRole="BR_Lista_Prato" />
           <NavigationProperty Name="BR_Tag" Relationship="Self.BR_Tag_Prato" FromRole="BR_Prato" ToRole="BR_Tag" />
+          <Property Name="Id_Estabelecimento" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BR_Estabelecimento" Relationship="Entities_Namespace.FK_BR_Prato_BR_Estabelecimento" FromRole="BR_Prato" ToRole="BR_Estabelecimento" />
         </EntityType>
         <EntityType Name="BR_Prato_Personalizado">
           <Key>
@@ -2205,7 +2224,23 @@
             <End Role="BR_Prato" EntitySet="BR_Prato" />
             <End Role="BR_Tag" EntitySet="BR_Tag" />
           </AssociationSet>
+          <AssociationSet Name="FK_BR_Prato_BR_Estabelecimento" Association="Entities_Namespace.FK_BR_Prato_BR_Estabelecimento">
+            <End Role="BR_Estabelecimento" EntitySet="BR_Estabelecimento" />
+            <End Role="BR_Prato" EntitySet="BR_Prato" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="FK_BR_Prato_BR_Estabelecimento">
+          <End Type="Entities_Namespace.BR_Estabelecimento" Role="BR_Estabelecimento" Multiplicity="1" />
+          <End Type="Entities_Namespace.BR_Prato" Role="BR_Prato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BR_Estabelecimento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BR_Prato">
+              <PropertyRef Name="Id_Estabelecimento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -2473,6 +2508,7 @@
           <EntitySetMapping Name="BR_Prato">
             <EntityTypeMapping TypeName="Entities_Namespace.BR_Prato">
               <MappingFragment StoreEntitySet="BR_Prato">
+                <ScalarProperty Name="Id_Estabelecimento" ColumnName="Id_Estabelecimento" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Nome" ColumnName="Nome" />
                 <ScalarProperty Name="Descricao" ColumnName="Descricao" />

@@ -72,20 +72,34 @@ namespace BuscaRango
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
                 BR_Prato prato = (BR_Prato)e.Item.DataItem;
-                Label nome = (Label)e.Item.FindControl("lblNome");
+                LinkButton nome = (LinkButton)e.Item.FindControl("lnkNome");
+                LinkButton estabelecimento = (LinkButton)e.Item.FindControl("lnkEstabelecimento");
                 Label descricao = (Label)e.Item.FindControl("lblDescricao");
-                Label estabelecimento = (Label)e.Item.FindControl("lblEstabelecimento");
                 Label nota = (Label)e.Item.FindControl("lblNota");
                 Image img = (Image)e.Item.FindControl("img");
 
-                /*
                 nome.Text = prato.Nome;
+                nome.PostBackUrl = "~/VerPrato/" + prato.Id;
+                estabelecimento.Text = prato.BR_Estabelecimento.Razao_Social;
+                estabelecimento.PostBackUrl = "~/VerEstabelecimento/" + prato.BR_Estabelecimento.Id;
                 descricao.Text = prato.Descricao;
-                estabelecimento.Text = prato.Estabelecimento.Nome;
-                nota.Text = "Nota: " + prato.Nota;
-                img.ImageUrl = "~/Img/Prato/" + prato.Imagem;
-                */
+                img.ImageUrl = "~/Img/Prato/" + prato.Imagem.ToUpper().Replace(".JPG", "_T.JPG").Replace(".PNG", "_T.PNG");
+
             }
+        }
+
+        /// <summary>
+        /// Btn Buscar Click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void btnBuscar_OnClick(object sender, EventArgs e)
+        {
+            LstPratosFiltrados = ((List<BR_Prato>)Session["Data"])
+                .Where(x => x.Nome.ToUpper()
+                    .Contains(txtBusca.Text.ToUpper()))
+                    .ToList();
+            CarregaPratosFiltrados();
         }
     }
 }

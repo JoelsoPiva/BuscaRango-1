@@ -7,3 +7,13 @@
 .row-info {
     padding-left: 25px !important;
 }
+
+h4 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h5 {
+    margin: 0 !important;
+    padding: 0 !important;
+}

@@ -32,7 +32,7 @@ namespace BuscaRango
                     lstEstabelecimentos = (List<BR_Estabelecimento>)estabelecimantos.RetObj;
                     lstEstabelecimentos.ForEach(x => lstEstabelecimentosFiltrados.Add(x));
                     CarregaEstabelecimentos();
-                    Session["Data"] = lstEstabelecimentos;
+                    Session["DataE"] = lstEstabelecimentos;
                 }
                 else
                 {
@@ -69,6 +69,11 @@ namespace BuscaRango
                 Label nota = (Label)e.Item.FindControl("lblNota");
                 Image img = (Image)e.Item.FindControl("img");
 
+                if (estab.BR_Fotos_Estabelecimento.Count > 0)
+                {
+                    img.ImageUrl = "~/Img/Estabelecimento/" + estab.BR_Fotos_Estabelecimento.FirstOrDefault().Imagem.ToUpper().Replace(".JPG", "_T.JPG").Replace(".PNG", "_T.PNG");
+                }
+                
                 /*
                 nome.Text = estab.Nome;
                 descricao.Text = estab.DescricaoCurta;
@@ -86,6 +91,15 @@ namespace BuscaRango
         {
             rptDados.DataSource = lstEstabelecimentosFiltrados;
             rptDados.DataBind();
+        }
+
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            lstEstabelecimentosFiltrados = new List<BR_Estabelecimento>();
+            lstEstabelecimentosFiltrados = ((List<BR_Estabelecimento>)
+            Session["DataE"]).Where(x => x.Razao_Social.ToUpper().Contains(txtBusca.Text.ToUpper())).ToList();
+            CarregaEstabelecimentos();
         }
     }
 }
