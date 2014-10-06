@@ -6,31 +6,78 @@
 <head runat="server">
     <asp:ContentPlaceHolder ID="cphHead" runat="server">
     </asp:ContentPlaceHolder>
-    <script src="Scripts/jquery-1.9.0.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Style/Master.css" rel="stylesheet" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/supersized.css" />
+    <link rel="stylesheet" type="text/css" href="css/supersized.shutter.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Leckerli+One' />
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Viga' />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 </head>
 <body>
-    <form id="form1" runat="server" class="container">
-        <asp:ScriptManager ID="smAJAX" runat="server"></asp:ScriptManager>
-        <div class="row com-borda">
-            <div class=" col-xs-3 no-margin no-padding">
-                <asp:Button ID="btnHome" runat="server" Text="Home" CssClass="btn btn-default btn-100" OnClick="btnHome_Click" />
-            </div>
-            <div class=" col-xs-3 no-margin no-padding">
-                <asp:Button ID="btnPrato" runat="server" Text="Pratos" CssClass="btn btn-default btn-100" OnClick="btnPrato_Click" />
-            </div>
-            <div class=" col-xs-3 no-margin no-padding">
-                <asp:Button ID="btnLugar" runat="server" Text="Lugares" CssClass="btn btn-default btn-100" OnClick="btnLugar_Click" />
-            </div>
-            <div class=" col-xs-3 no-margin no-padding">
-                <asp:Button ID="btnConfig" runat="server" Text="Configuração" CssClass="btn btn-default btn-100" OnClick="btnConfig_Click" />
+    <form id="form1" runat="server">
+        <!--Control Bar Start-->
+        <div id="controls-wrapper" class="load-item">
+            <div id="controls">
+                <ul id="slide-list"></ul>
             </div>
         </div>
+        <!--Control Bar End-->
+
+        <!--Logo Start-->
+        <section id="logo">
+            <asp:HyperLink runat="server" NavigateUrl="~/Home">
+                <h1>Busca Rango</h1>
+            </asp:HyperLink>
+        </section>
+        <!--Logo End-->
+
+        <!--Menu Start-->
+        <nav class="menu nav_wrapper" id="myslidemenu">
+            <ul class="menu" id="jqueryslidemenu">
+                <li class="current">
+                    <asp:HyperLink runat="server" NavigateUrl="~/Home">
+                        <i class="fa fa-home"></i>Home
+                    </asp:HyperLink>
+                </li>
+                <li><a href="#">
+                    <i class="fa fa-cutlery"></i>Buscar</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <asp:HyperLink runat="server" NavigateUrl="~/Lugar">Estabelecimentos</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink runat="server" NavigateUrl="~/Prato">Pratos</asp:HyperLink></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Menu End-->
 
         <asp:ContentPlaceHolder ID="cphConteudo" runat="server">
         </asp:ContentPlaceHolder>
+
+        <!--Footer Start-->
+        <footer>
+            <div class="one-third">
+                <p>Busca Rango - Grupo 3</p>
+            </div>
+            <div class="one-third">
+                <p class="copy-right">SENAC RS</p>
+            </div>
+        </footer>
+        <!--Footer End-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="js/supersized.3.2.7.js"></script>
+        <script type="text/javascript" src="js/supersized.shutter.js"></script>
+        <script type="text/javascript" src="js/superized-custom.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
     </form>
 </body>
 </html>

@@ -1,56 +1,38 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="BuscaPrato.aspx.cs" Inherits="BuscaRango.BuscaPrato" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
-    <title>Busca Rango | Busca de prato</title>
-    <link href="Style/BuscaPrato.css" rel="stylesheet" />
+    <title>Busca Rango | Busca de Pratos</title>
+    <link rel="stylesheet" type="text/css" href="css/Isotope.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphConteudo" runat="server">
-    <asp:UpdatePanel ID="upContent" runat="server">
-        <ContentTemplate>
-            <!-- Filtros -->
-            <div class="row com-borda sem-borda-top">
-                <div class="col-xs-8 no-margin no-padding">
-                    <asp:TextBox ID="txtBusca" runat="server" CssClass="form-control btn-100" placeholder="Buscar"></asp:TextBox>
-                </div>
-                <div class="col-xs-2 no-margin no-padding">
-                    <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_OnClick" Text="Buscar" CssClass="btn btn-default btn-100" />
-                </div>
-                <div class="col-xs-2 no-margin no-padding">
-                    <asp:Button ID="btnFiltrar" runat="server" Text="+ Filtros" CssClass="btn btn-default btn-100" />
-                </div>
-            </div>
-
-            <!-- Dados -->
-            <asp:Repeater ID="rptDados" runat="server" OnItemDataBound="rptDados_ItemDataBound">
-                <ItemTemplate>
-                    <div class="row com-borda">
-                        <div class="col-xs-2 col-img">
-                            <asp:Image ID="img" runat="server" Height="100" Width="150" />
-                        </div>
-                        <div class="col-xs-10">
-                            <div class="row row-info">
+    <!--Container Start-->
+    <section id="container-fluid">
+        <section id="container">
+            <!--food menu start..-->
+            <ul class="portfolio_items isotope-container clearfix portfolio-page-template gallery">
+                <!-- Dados -->
+                <asp:Repeater ID="rptDados" runat="server" OnItemDataBound="rptDados_ItemDataBound">
+                    <ItemTemplate>
+                        <li class="isotope-item all illustration">
+                            <div class="item-container">
+                                <asp:Image ID="img" runat="server"/>
+                                <asp:Label ID="lblPreco" runat="server" Text="" CssClass="item_price"></asp:Label>
+                                <asp:HyperLink ID="hplDesc" runat="server" CssClass="link_to_image"></asp:HyperLink>
+                                <asp:HyperLink ID="hplEstab" runat="server" CssClass="link_to_post"></asp:HyperLink>
+                            </div>
+                            <div class="portfolio_post_content">
                                 <h4>
-                                    <asp:LinkButton ID="lnkNome" runat="server" Text=""></asp:LinkButton>
+                                    <asp:Label ID="lblNome" runat="server" Text=""></asp:Label>
                                 </h4>
                             </div>
-                            <div class="row row-info">
-                                <h5>
-                                    <asp:LinkButton ID="lnkEstabelecimento" runat="server" Text=""></asp:LinkButton>
-                                </h5>
-                            </div>
-                            <div class="row row-info">
-                                <asp:Label ID="lblEstabelecimento" runat="server" Text=""></asp:Label>
-                            </div>
-                            <div class="row row-info">
-                                <asp:Label ID="lblDescricao" runat="server" Text=""></asp:Label>
-                            </div>
-                            <div class="row row-info">
-                                <asp:Label ID="lblNota" runat="server" Text=""></asp:Label>
-                            </div>
-                        </div>
-                    </div>
-                </ItemTemplate>
-            </asp:Repeater>
-        </ContentTemplate>
-    </asp:UpdatePanel>
+                        </li>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </ul>
+            <!--food menu end..-->
+        </section>
+    </section>
+    <!--Container End-->
 </asp:Content>
