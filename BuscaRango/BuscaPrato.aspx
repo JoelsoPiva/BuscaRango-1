@@ -2,9 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
     <title>Busca Rango | Busca de Pratos</title>
-    <link rel="stylesheet" type="text/css" href="css/Isotope.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphConteudo" runat="server">
     <!--Container Start-->

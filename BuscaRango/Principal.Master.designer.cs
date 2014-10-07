@@ -31,6 +31,15 @@ namespace BuscaRango {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// smBR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager smBR;
+        
+        /// <summary>
         /// cphConteudo control.
         /// </summary>
         /// <remarks>
